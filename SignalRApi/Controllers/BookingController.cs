@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DtoLayer.BookingDto;
-using SignalR.DtoLayer.BookingDto;
 using SignalR.EntityLayer.Entities;
 
 namespace SignalRApi.Controllers
@@ -40,7 +39,7 @@ namespace SignalRApi.Controllers
 			return Ok("Rezervasyon Başarılı Bir Şekilde Oluşturuldu");
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public IActionResult DeleteBooking(int id)
 		{
 			var value = _bookingService.TGetByID(id);
@@ -57,13 +56,14 @@ namespace SignalRApi.Controllers
 				Date = updateBookingDto.Date,
 				Name = updateBookingDto.Name,
 				PersonCount = updateBookingDto.PersonCount,
-				Phone = updateBookingDto.Phone
+				Phone = updateBookingDto.Phone,
+				Mail = updateBookingDto.Mail
 			};
 			_bookingService.TUpdate(Booking);
 			return Ok("Rezervasyon Başarılı Bir Şekilde Güncellendi!");
 		}
 
-		[HttpGet("GetBooking")]
+		[HttpGet("{id}")]
 		public IActionResult GetBooking(int id)
 		{
 			var value = _bookingService.TGetByID(id);
