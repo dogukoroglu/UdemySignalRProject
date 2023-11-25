@@ -1,0 +1,63 @@
+﻿@model UpdateFeatureDto
+@{
+    ViewData["Title"] = "UpdateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Öne Çıkan Alan İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<form method="post">
+						<div class="card-header">
+							<div class="card-title">Öne Çıkan Alan Güncelleme</div>
+						</div>
+						<input type="hidden" asp-for="FeatureID" />
+						<div class="card-body">
+							<div class="form-group">
+								<label for="FeatureTitle1">1.Başlığı Giriniz</label>
+								<input type="text" class="form-control" asp-for="FeatureTitle1" id="FeatureTitle1">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="FeatureTitle2">1.Başlığı Giriniz</label>
+								<input type="text" class="form-control" asp-for="FeatureTitle2" id="FeatureTitle2">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="FeatureTitle3">1.Başlığı Giriniz</label>
+								<input type="text" class="form-control" asp-for="FeatureTitle3" id="FeatureTitle3">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Description">1.Açıklamayı Giriniz</label>
+								<textarea rows="5" class="form-control" asp-for="FeatureDescription1" id="Description"></textarea>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Description">2.Açıklamayı Giriniz</label>
+								<textarea rows="5" class="form-control" asp-for="FeatureDescription2" id="Description"></textarea>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Description">3.Açıklamayı Giriniz</label>
+								<textarea rows="5" class="form-control" asp-for="FeatureDescription3" id="Description"></textarea>
+							</div>
+						</div>
+						<div class="card-action">
+							<button type="submit" class="btn btn-primary">Güncelle</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
