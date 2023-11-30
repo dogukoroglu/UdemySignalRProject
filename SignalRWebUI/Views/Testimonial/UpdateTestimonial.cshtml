@@ -1,0 +1,52 @@
+﻿@model UpdateTestimonialDto
+
+@{
+	ViewData["Title"] = "UpdateTestimonial";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Referans İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<form method="post">
+						<div class="card-header">
+							<div class="card-title">Yeni Referans Girişi</div>
+						</div>
+						<input type="hidden" asp-for="TestimonialID" />
+						<div class="card-body">
+							<div class="form-group">
+								<label for="name">Ad-Soyad Giriniz</label>
+								<input type="text" class="form-control" asp-for="TestimonialName" id="name">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Phone">Başlık Giriniz</label>
+								<input type="text" class="form-control" asp-for="TestimonialTitle" id="Phone">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="name">Resim Yükleme</label>
+								<input type="text" class="form-control" asp-for="TestimonialImageUrl" id="name">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Description">Yorumunuz</label>
+								<textarea rows="5" class="form-control" asp-for="TestimonialComment" id="Description"></textarea>
+							</div>
+						</div>
+						<div class="card-action">
+							<button type="submit" class="btn btn-primary">Yeni Referans Oluştur</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

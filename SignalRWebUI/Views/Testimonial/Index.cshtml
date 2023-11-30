@@ -1,0 +1,60 @@
+﻿@model List<ResultTestimonialDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Referans İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Referans Listesi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Referanslar ile ilgili işlemleri aşağıdan gerçekleştirebilirsiniz :
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Ad-Soyad</th>
+									<th scope="col">Başlık</th>
+									<th scope="col">Resim Url</th>
+									<th scope="col">Durum</th>
+									<th scope="col">Yorum</th>
+									<th scope="col">Sil</th>
+									<th scope="col">Güncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									<tr>
+										<td>@item.TestimonialID</td>
+										<td>@item.TestimonialName</td>
+										<td>@item.TestimonialTitle</td>
+										<td>@item.TestimonialImageUrl</td>
+										<td>@item.TestimonialStatus</td>
+										<td>@item.TestimonialComment.Substring(0,50)</td>
+										<td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-danger">Sil</a></td>
+										<td><a href="/Testimonial/UpdateTestimonial/@item.TestimonialID" class="btn btn-success">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/Testimonial/CreateTestimonial/" class="btn btn-primary">Yeni Referans Girişi</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
