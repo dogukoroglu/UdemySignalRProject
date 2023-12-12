@@ -16,7 +16,7 @@
 					</div>
 					<div class="card-body">
 						<div class="card-sub">
-							İndirim yapılacak ürünler ile ilgili işlemleri aşağıdan gerçekleştirebilirsiniz(2 adet yapılacak) :
+							İndirim yapılacak ürünler ile ilgili işlemleri aşağıdan gerçekleştirebilirsiniz(<strong>2 adet</strong> yapılacak) :
 						</div>
 						<table class="table mt-3">
 							<thead>
@@ -25,11 +25,11 @@
 									<th scope="col">Başlık</th>
 									<th scope="col">İndirim Oranı</th>
 									<th scope="col">Durum</th>
-									<th scope="col">Ürün Görseli</th>
 									<th scope="col">Açıklama</th>
-									<th scope="col">Durum Değiştirme</th>
 									<th scope="col">Sil</th>
 									<th scope="col">Güncelle</th>
+									<th scope="col">Aktif Yap</th>
+									<th scope="col">Pasif Yap</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -37,14 +37,21 @@
 								{
 									<tr>
 										<td>@item.DiscountID</td>
-										<td>@item.DiscountTitle</td>
+										<td>@item.DiscountTitle</td> 
 										<td>@item.DiscountAmount</td>
-										<td>İndirimli Ürün</td>
-										<td>@item.DiscountImageUrl</td>
+										@if(item.DiscountStatus == true)
+										{
+											<td>Aktif</td>
+										}
+										else
+										{
+											<td>Pasif</td>
+										}
 										<td>@item.DiscountDescription</td>
-										<td><a href="/Discount/DeleteDiscount/@item.DiscountID" class="btn btn-danger">Durum<> </></a></td>
 										<td><a href="/Discount/DeleteDiscount/@item.DiscountID" class="btn btn-danger">Sil</a></td>
 										<td><a href="/Discount/UpdateDiscount/@item.DiscountID" class="btn btn-success">Güncelle</a></td>
+										<td><a href="/Discount/ChangeStatusTrue/@item.DiscountID" class="btn btn-warning">Aktif Yap</a></td>
+										<td><a href="/Discount/ChangeStatusFalse/@item.DiscountID" class="btn btn-dark">Pasif Yap</a></td>
 									</tr>
 								}
 							</tbody>
