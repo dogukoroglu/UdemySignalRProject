@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SignalRWebUI.Dtos.SliderDtos;
+using SignalRWebUI.Dtos.SliderDto;
 using SignalRWebUI.Dtos.TestimonialDto;
 namespace SignalRWebUI.ViewComponents.DefaultComponents
 {
