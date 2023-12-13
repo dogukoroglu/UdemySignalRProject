@@ -8,3 +8,4 @@ Ayarlar
 Uygulama Seviyesinde Authorize
 Mail İşlemleri
 Arama işlemleri yapılacak
+** default tarafında navbarlardaki active sorununu kontrol et
