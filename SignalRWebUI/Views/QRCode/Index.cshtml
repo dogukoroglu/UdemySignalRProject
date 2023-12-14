@@ -12,10 +12,10 @@
 					<form method="post" asp-action="Index" asp-controller="QRCode">
 						<input type="text" name="value" />
 						<input type="submit" value="QR Kod Oluştur" class="btn btn-warning" />
-
+						<br /><br />
 						@if (ViewBag.QRCodeImage != null)
 						{
-							<img src="@ViewBag.QRCodeImage" alt="" style="witdth:400px;height:400px" />
+							<img src="@ViewBag.QRCodeImage" alt="" style="width:400px;height:400px" />
 						}
 					</form>
 				</div>
