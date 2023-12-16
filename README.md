@@ -73,7 +73,7 @@ _______________________________________
 
 
 **İlişkisel Veritabanı Diagramı**
-[db](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/966bf337-0476-4f97-af2f-d8c19fe2289b)
+![db](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/966bf337-0476-4f97-af2f-d8c19fe2289b)
 _____________________________________
 
  **UI**
