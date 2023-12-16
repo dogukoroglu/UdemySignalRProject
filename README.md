@@ -8,7 +8,7 @@ ___________________________________________
 
   **Proje Detayları**
 
-Bu Proje bir restorant rezervasyon ve menü web uygulamasıdır. .Net Core 6.0 ve N-Katmanlı Mimari ile oluşturuldu. 
+Bu Proje bir restoran rezervasyon ve menü web uygulamasıdır. .Net Core 6.0 ve N-Katmanlı Mimari ile oluşturuldu. 
 
 Projedeki katmanlar şunlar:
 
@@ -44,7 +44,7 @@ _______________________________________
 
 **Proje İçeriği**
 
-- Restorant için rezervasyon işlemleri
+- Restoran için rezervasyon işlemleri
 - Dinamik CRUD işlemleri
 - Yönetim Paneli (Admin Paneli)
 - Identity Kütüphanesi ile Login Register İşlemleri
