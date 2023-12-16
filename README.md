@@ -1,4 +1,4 @@
-**Asp.Net Core Api - Rapid Api ve Api Consume Projesi**
+**Asp.Net Core Api SignalR ile QR Kodlu Sipariş Yönetimi Projesi**
 
 Merhaba,
 
