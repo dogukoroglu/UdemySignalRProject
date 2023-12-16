@@ -53,23 +53,12 @@ _______________________________________
 _______________________________________
 
 
-
-**Proje Özellikleri**
-
-- Kullanıcılar Ana Sayfada odaları görüntüleyebilir.
-- İletişim kısmından yöneticiye mesaj gönderip odalar, rezervasyonlar ve tüm işlemlerle ilgili bilgi alabilir.
-- Odaların detaylarını görüntüleyip bilgi sahibi olabilirler.
-  ______________________________________
-
-
-
  _**Admin İçin Özellikler**_
 
 - Admin Login işlemi ile Kontrol paneline erişebilir
 - Kullanıcılardan gelen mesajları görüntüleyebilir.
 - Dashboard panelinde bazı dinamik istatistik bilgilerini görebilir.
-- Odalar, Hizmetler, Misafitler, Çalışanlar, Lokasyonlar, Rol Atamaları,
-  İletişim Bilgileri, Kullanıcılar ve Referanslar gibi tüm işlemleri panel üzerinden yönetebilirler .
+- Menü, Rezervasyonlar, İndirimler, İletişim, İletişim Bilgileri, Kategoriler ve Referanslar gibi tüm işlemleri panel üzerinden yönetebilirler .
 
 
 **İlişkisel Veritabanı Diagramı**
