@@ -70,7 +70,6 @@ _____________________________________
 ![1](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/41da6a59-a311-43f6-adba-e0ddf48200ea)
 ![2](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/d796e3cd-0875-4114-a773-19e4a37bde4f)
  ![3](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/811000cf-5478-48b4-bc3d-4d476bcf8d85)
-![4](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/3ec5d54d-e257-4bef-b6b9-f91278240442)
 ![5](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/b0ea8b86-eeed-4632-8b0d-511306ee7b82)
 ![register](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/a40bac28-c012-47b6-84a8-b067e660d14c)
 ![login](https://github.com/dogukoroglu/UdemySignalRProject/assets/102040349/2811a90a-cb41-423f-b263-0815b4e29126)
