@@ -44,7 +44,7 @@ _______________________________________
 
 **Proje İçeriği**
 
-- Otel için rezervasyon işlemleri
+- Restorant için rezervasyon işlemleri
 - Dinamik CRUD işlemleri
 - Yönetim Paneli (Admin Paneli)
 - Identity Kütüphanesi ile Login Register İşlemleri
